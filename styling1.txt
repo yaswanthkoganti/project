@@ -1,0 +1,117 @@
+
+THIS IS TO DISPLAY THE TEXT IN VARIOUS COLOURS:
+
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+
+
+---------------------------------------------------------------------------------------------------------------------
+TO DISPLAY AIRLINE WEBSITE NAME WE CAN USE THIS MARQUE TAG TO BE MORE ATTRACTIVE
+
+
+<marquee behavior="alternate">TEXT</marquee>
+
+
+behaviour can be left/right/alternate depending upon our project
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+SUBMIT BUTTON IN MORE STYLISH WAY
+
+
+<input type="submit" name="submit" value="Send" id="submit" />
+
+
+#submit {
+ color: #fff;
+ font-size: 0;
+ width: 135px;
+ height: 60px;
+ border: none;
+ margin: 0;
+ padding: 0;
+ background: #0c0 url(image) 0 0 no-repeat; 
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+SUBMIT BUTTON IN MORE STYLISH WAY
+
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+ENTIRE CLASS cAN BE MODELED USING:
+
+<style>
+p.a {
+    font-family: "Times New Roman", Times, serif;
+}
+
+</style>
+
+<p class="a">This is a paragraph, shown in the Times New Roman font.</p>
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+ANIMATIONS FEATURE LINK
+
+
+https://www.theserverside.com/tutorial/How-to-animate-your-web-pages-using-JavaScript-HTML-and-CSS-A-tutorial
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+TO DISPLAY IN LANDSCAPE MODE OR PORTRAIT MODE
+
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+TO EMBED IMAGE IN MORE STYLISH WAY
+
+
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------

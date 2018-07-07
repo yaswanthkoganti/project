@@ -1,0 +1,28 @@
+
+
+
+<style>
+    /* tr:nth-child(even) */
+    tr.even { background-color: white; }
+    /* tr:nth-child(odd) */
+    tr.odd { background-color: black; }
+</style>
+<script>
+    $(function(){
+        // Apply to each table individually and make sure nothing is doubleclassed
+        // if you run this multiples of times.
+        $('table').each(function() {
+            $('tr:odd',  this).addClass('odd').removeClass('even');
+            $('tr:even', this).addClass('even').removeClass('odd');
+        });
+    });
+</script>
+
+
+
+
+
+$('#table_id').find('tr:even').css({'background-color':'red'})
+              .end().find('tr:odd').css({'background-color':'blue'});
+
+
